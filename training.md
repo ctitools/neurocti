@@ -9,6 +9,9 @@ And within that dataset, there are two sub-sets: __"raw"__ (generic text for non
 The training was done on 3x RTX 4090 (=72 GB of vRAM), 128 GB of RAM, AMD Ryzen Threadripper PRO 5955WX 16-Cores.
 Also, we were generously given access to a server with 2 x L40S GPUs (48GB vRAM each)
 
+## Recommended HW
+As much GPU vRAM as you can get ;-) Anything north of 128GB vRAM is good. There are tricks to use QLoRA but we have not tried them yet.
+
 ## OS and software requirements
 
 The base OS that we trained with was an Ubuntu 20.04.6 LTS. In addition, we installed the [lambdastack](https://lambdalabs.com/lambda-stack-deep-learning-software) which neatly makes sure that all the NVIDIA SDK and drivers are ok.
@@ -74,7 +77,7 @@ lora:
   rank: 128      # anything from 64 to 256. The higher the rank, the more weights will get affected in the base model
 
 # optim
-# seq_len: 32768       # seq_len is 
+# seq_len: 32768       # sequence length for training
 seq_len: 2048
 batch_size: 1
 max_steps: 5000
