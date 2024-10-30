@@ -58,11 +58,12 @@ huggingface-cli login    # this will create a ~/.huggingface/token file
 cp example/7B.yaml example/nemo.yaml
 # edit example/nemo.yaml like below for example
 ```
+
 Please note: you will find a detailed explanation of the fields of this yaml file [here](https://github.com/mistralai/mistral-finetune/tree/main?tab=readme-ov-file#customizing-training-configuration)
 
 `example/nemo.yaml` example file:
 
-``yaml
+```yaml
 # data
 data:
   data: "data/mistral-pre-train.jsonl"  # Optionally fill with pretraining data 
