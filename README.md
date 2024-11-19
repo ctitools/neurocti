@@ -11,3 +11,10 @@ We aim at replicability and you being able to train your own models as much as p
 Please see the [training.md](training.md) HOWTO.
 
 # How to run them
+
+
+# Past presentations
+
+* Hack.lu 2024: [video](https://youtu.be/sVlLjaTY1pc?feature=shared)
+* CERT-Stammtisch 2024: [slides]()
+* BSides 2024 Vienna: [slides]()
