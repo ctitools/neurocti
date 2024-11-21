@@ -3,8 +3,10 @@ An LLM for CTI reports: fine-tuning LLMs for working with CTI reports
 
 # neurocti-small
 
-The [neurocti-small](../neurocti-small) model is built on top of llama-3.1.
-The [neurocti-mistral-nemo-12b](../neurocti-mistral-nemo-12b) model was built on top of [Mistral Nemo](https://mistral.ai/news/mistral-nemo/)
+We fine-tuned different open models on top of the [ORKL](https://www.orkl.eu) dataset.
+
+* The [neurocti-small](../neurocti-small) model is built on top of llama-3.1.
+* The [neurocti-mistral-nemo-12b](../neurocti-mistral-nemo-12b) model was built on top of [Mistral Nemo](https://mistral.ai/news/mistral-nemo/)
 
 # How to train the models yourself
 
