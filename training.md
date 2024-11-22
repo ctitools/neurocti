@@ -1,7 +1,7 @@
 # How to train the neuroCTI models yourself
 
 In short: this depends on the base model and the data you want to (LoRA) train on.
-We use the [neurocti-orkl](https://github.com/ctitools/cti-datasets/tree/main/orkl) dataset.
+We use the [neurocti-orkl-10k]([https://github.com/ctitools/cti-datasets/tree/main/orkl](https://huggingface.co/datasets/ctitools/orkl_cleaned_10k)) dataset.
 And within that dataset, there are two sub-sets: __"raw"__ (generic text for non-instruct training) and __"instruction-training"__
 
 ## Hardware requirements
