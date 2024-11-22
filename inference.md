@@ -24,6 +24,84 @@ pip install mistral-inference
 ```
 ## Gettings started
 
+### mistral-chat
+
+You can interact with the model by simply invoking mistral-chat on our unpacked model:
+
+```bash
+mistral-chat models/mistral-nemo-base/  --max_tokens 1024 --temperature 0.35
+```
+```
+Prompt: APT28 is
+ a Russian cyber espionage group that has been active since at least 2007. The group is also known as Fancy Bear, Sofacy, Sednit, and Pawn Storm. APT28 is believed to be sponsored by the Russian government and has been linked to several high-profile cyber attacks, including the 2016 Democratic National Committee (DNC) hack.
+```
+
+Now lets add our fine-tuned LoRA Adapter:
+
+```bash
+mistral-chat models/mistral-nemo-base/ -l models/mistral-nemo-base-lora/lora.safetensors  --max_tokens 102
+4 --temperature 0.35
+```
+```
+Prompt: APT28 is
+ a Russian cyber espionage group that has been active since at least 2007. The group is also known as Fancy Bear, Pawn Storm, and Sofacy. APT28 is believed to be behind the cyber attacks against the United States Democratic National Committee (DNC) and the French presidential campaign in 2016. The group is also responsible for the hacking of global television network TV5Monde, the World Anti-Doping Agency (WADA) email leak, and the hack of the German parliament in 2015.
+
+## History
+
+The group has been active since at least 2007, using a variety of methods to gain access to target networks. In 2014, APT28 used a zero-day exploit in Microsoft Windows to infect a large number of targets, including the White House, the State Department, the Joint Chiefs of Staff, and the Pentagon. The group has also used spear phishing emails with malicious attachments and malicious links.
+
+In 2016, APT28 was linked to the cyber attacks against the United States Democratic National Committee (DNC) and the French presidential campaign. The group was also responsible for the hacking of global television network TV5Monde, the WADA email leak, and the hack of the German parliament in 2015.
+
+## Techniques
+
+APT28 uses a variety of techniques to gain access to target networks. These include:
+
+- **Spear phishing**: APT28 has been known to use spear phishing emails with malicious attachments or links to compromise its targets.
+- **Zero-day exploits**: The group has used zero-day exploits in Microsoft Windows to infect its targets.
+- **Credential theft**: APT28 has stolen credentials from its targets to move laterally within a network.
+- **Custom malware**: APT28 has developed custom malware, such as the Sofacy and X-Agent malware, to compromise its targets.
+
+## Targets
+
+APT28 has targeted a wide range of organizations and individuals, including:
+
+- Governments
+- Military organizations
+- Political organizations
+- Journalists and media organizations
+- Research institutions
+- Private companies
+
+The group has targeted organizations in many countries, including the United States, Russia, Ukraine, Georgia, and Turkey.
+
+## Impact
+
+APT28 has had a significant impact on its targets, including:
+
+- Theft of confidential information
+- Disruption of services
+- Damage to equipment
+- Public exposure of sensitive information
+
+The group's activities have raised concerns about the security of organizations and the potential for cyber warfare.
+
+## Mitigation
+
+To protect against APT28's tactics, organizations can take the following steps:
+
+- Educate employees about phishing attacks and social engineering techniques.
+- Use strong passwords and multi-factor authentication to secure accounts.
+- Monitor for unusual activity, such as unauthorized software installations.
+- Use advanced malware detection technologies to identify and block malicious files.
+
+By following these steps, organizations can enhance their cybersecurity and reduce the risk of compromise from APT28 and other cyber threats.
+=====================
+Prompt: 
+```
+
+
+## Integrate using python
+
 Here is some example code running inference with mistral-nemo, once without and once with out lora applied. Since we are using a base model, the model will try to complete our prompt "APT28 is..."
 ...
 
