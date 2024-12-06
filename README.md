@@ -15,6 +15,7 @@ Please see the [training.md](training.md) HOWTO.
 
 # How to run them
 
+See [inference.md](inference.md)
 
 # Past presentations
 * [Annual FIRST conference](https://www.first.org/conference/2024/program#pNeuroCTI-a-Custom-Fine-Tuned-LLM-for-CTI-Benchmarking-Successes-and-Lessons-Learned) Fukuoka, Japan 2024: [slides](https://www.first.org/resources/papers/conf2024/1115-Neurocti-Kaplan-Dulaunoy-Brandl.pdf)
